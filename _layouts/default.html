@@ -26,6 +26,18 @@
         span {
             text-align: center;
         }
+        ul#markdown-toc>li>a:only-child,
+        ul#markdown-toc>li:not(:has(ul)) {
+        	display: none;
+        }
+        
+        h3 {
+        	display: none;
+        }
+        
+        h3:has(+div) {
+        	display: block;
+        }
     </style>
 
     <div class="container">
